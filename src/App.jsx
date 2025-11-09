@@ -54,7 +54,7 @@ function App() {
 
               {/* Download CV button */}
               <a
-                href="public\dixit_cv.pdf"
+                href="/dixit_cv.pdf"
                 download
                 className="flex justify-center items-center bg-black text-gray-200 
                 border-gray-400 rounded-md px-2 py-1 border-2 text-[0.9rem] hover:bg-gray-700 
@@ -62,6 +62,7 @@ function App() {
               >
                 <IoMdDownload size={18} /> Download CV
               </a>
+
             </div>
           </div>
         </div>
@@ -95,6 +96,7 @@ function App() {
         <div className='flex-row w-full sm:w-120 text-white pt-5'>
           <h2 className='text-lg sm:text-xl font-semibold text-center sm:text-left'>Projects:</h2>
           <div className='flex flex-col gap-5 pt-5'>
+
             {/* Project 1 */}
             <div className="relative bg-gray-700 w-full sm:w-100 h-[200px] sm:h-50 rounded-2xl overflow-hidden shadow-lg
               hover:scale-105 transition-transform duration-300">
