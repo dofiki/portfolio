@@ -126,7 +126,7 @@ function App() {
               <div className="relative z-10 flex justify-around items-end pb-2 h-full text-white text-[0.8rem] sm:text-[1rem]">
                 <div className='text-left'>
                   <h3 className="text-[1rem] font-semibold">Nightrunner</h3>
-                  <p className="opacity-90 text-[0.9rem]">Casual shooting game inspired <br /> by annoying game ads</p>
+                  <p className="opacity-90 text-[0.9rem]">Casual shooting game <br />inspired by game ads</p>
                 </div>
                 <a target='blank' href='https://nightrunner.vercel.app/' className='underline rounded-2xl hover:text-blue-200 
                   transition-colors delay-40 ease-in text-[0.9rem]'>Live Demo</a>
