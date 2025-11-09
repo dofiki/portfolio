@@ -1,6 +1,9 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
+import younoScreenshot from './assets/youno_screenshot.JPG';
+import nightrunnerScreenshot from './assets/nightrunner_screenshot.JPG';
+import me from './assets/me.png'
 
 function App() {
 
@@ -13,7 +16,7 @@ function App() {
         <div className='flex flex-col sm:flex-row w-full sm:w-120 h-auto sm:h-45 gap-5 items-center sm:items-start text-center sm:text-left'>
           <div className='bg-gray-600 h-15 w-15 rounded-full flex justify-center mx-auto sm:mx-0'>
             <div className='bg-gray-300 h-14 w-14 rounded-full self-center'>
-              <img src="src\assets\me.png" className="rounded-full"/>
+              <img src={me} alt="profile picture" className="rounded-full"/>
             </div>
           </div>
 
@@ -51,7 +54,7 @@ function App() {
 
               {/* Download CV button */}
               <a
-                href="/cv.pdf"
+                href="src\assets\dixit_cv.pdf"
                 download
                 className="flex justify-center items-center bg-black text-gray-200 
                 border-gray-400 rounded-md px-2 py-1 border-2 text-[0.9rem] hover:bg-gray-700 
@@ -96,8 +99,7 @@ function App() {
             <div className="relative bg-gray-700 w-full sm:w-100 h-[200px] sm:h-50 rounded-2xl overflow-hidden shadow-lg
               hover:scale-105 transition-transform duration-300">
               <img 
-                src="src/assets/youno_screenshot.JPG" 
-                alt="Project screenshot"
+                src={younoScreenshot} alt="Project screenshot"
                 className="absolute object-cover w-full h-full"
               />
               <div className="absolute inset-0 bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] opacity-80"></div>
@@ -115,8 +117,7 @@ function App() {
             <div className="relative bg-gray-700 w-full sm:w-100 h-[200px] sm:h-50 rounded-2xl overflow-hidden shadow-lg
               hover:scale-105 transition-transform duration-300">
               <img 
-                src="src/assets/nightrunner_screenshot.JPG" 
-                alt="Project screenshot"
+                src={nightrunnerScreenshot} alt="Project screenshot"
                 className="absolute object-cover w-full h-full"
               />
               <div className="absolute inset-0 bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] opacity-60"></div>
@@ -135,7 +136,7 @@ function App() {
         {/* Footer */}
         <div className='text-gray-400 text-[0.8rem] sm:text-[0.9rem] underline justify-center sm:justify-start pt-5 flex gap-2 flex-wrap w-full sm:w-120 text-center sm:text-left'>
           <a href='mailto:mailbox.dixit@gmail.com' className='hover:text-gray-50 transition-colors delay-40 ease-in'>mailbox.dixit@gmail.com</a>
-          <a href='https://www.linkedin.com/in/dixitregmi/' target='blank' className='hover:text-gray-50 transition-colors delay-40 ease-in'>portfolio.dixit</a>
+          <a href='https://dixitportfolio.vercel.app/' target='blank' className='hover:text-gray-50 transition-colors delay-40 ease-in'>portfolio.dixit</a>
           <a href="https://www.linkedin.com/in/dixitregmi/"  target='blank'  className='hover:text-gray-50 transition-colors delay-40 ease-in'>linkedin.com/in/dixitregmi</a>
         </div>
       </div>
