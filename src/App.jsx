@@ -54,7 +54,7 @@ function App() {
 
               {/* Download CV button */}
               <a
-                href="src\assets\dixit_cv.pdf"
+                href="public\dixit_cv.pdf"
                 download
                 className="flex justify-center items-center bg-black text-gray-200 
                 border-gray-400 rounded-md px-2 py-1 border-2 text-[0.9rem] hover:bg-gray-700 
