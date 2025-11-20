@@ -1,16 +1,21 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
+import { FaGithub } from "react-icons/fa6";
+
 import younoScreenshot from './assets/youno_screenshot.JPG';
 import nightrunnerScreenshot from './assets/nightrunner_screenshot.JPG';
+import watcheditScreenshot from './assets/watchedit_Screenshot.JPG'
+
 import me from './assets/me.png'
 
 function App() {
 
   return (
     <>
-      <div className="flex flex-col items-center pt-15 absolute inset-0 -z-10 min-h-[140vh] w-full bg-black 
-      bg-[radial-gradient(#292929_2px,transparent_1px)] [background-size:36px_36px] px-4 sm:px-0 overflow-x-hidden">
+<div className="flex flex-col items-center pt-15 min-h-screen w-full bg-black
+bg-[radial-gradient(#292929_2px,transparent_1px)] [background-size:36px_36px] px-4 sm:px-0 overflow-x-hidden">
+
 
         {/* Profile Section */}
         <div className='flex flex-col sm:flex-row w-full sm:w-120 h-auto sm:h-45 gap-5 items-center sm:items-start text-center sm:text-left'>
@@ -22,9 +27,9 @@ function App() {
 
           <div>
             <div className='text-white font-semibold text-lg sm:text-xl'>Dixit Regmi</div>
-            <div className='text-gray-300 text-sm sm:text-base'>
-              Frontend developer focused on building responsive,
-              dynamic websites and exploring 3D web design.
+            <div className='text-gray-300 text-[0.7rem] sm:text-base '>
+             Final-semester CSIT student with frontend development experience, building responsive web apps, 
+             interested in backend development, and eager to learn new tools and technologies.
             </div>
 
             <div className="flex flex-wrap justify-center sm:justify-start gap-3 pt-5">
@@ -52,9 +57,23 @@ function App() {
                 <FaLinkedinIn size={18} />
               </a>
 
+              <a
+                href="https://github.com/dofiki"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center bg-black text-gray-200 
+                border-gray-400 rounded-md px-2 py-2 border-2 hover:bg-gray-700 
+                transition-colors delay-40 ease-in cursor-pointer "
+                aria-label="Github Profile"
+              >
+                <FaGithub size={18} />
+
+
+              </a>
+
               {/* Download CV button */}
               <a
-                href="/dixit_cv.pdf"
+                href="/DixtRegmi_CV.pdf"
                 download
                 className="flex justify-center items-center bg-black text-gray-200 
                 border-gray-400 rounded-md px-2 py-1 border-2 text-[0.9rem] hover:bg-gray-700 
@@ -68,7 +87,7 @@ function App() {
         </div>
 
         {/* Skills Section */}
-        <div className='flex-row w-full sm:w-120 text-white mt-5'>
+        <div className='flex-row w-full sm:w-120 text-white mt-18'>
           <h2 className='text-lg sm:text-xl font-semibold text-center sm:text-left'>Skills:</h2>
           <div className='flex flex-wrap justify-center sm:justify-start gap-2 pt-2 text-[0.9rem] sm:text-[1rem]'>
             <button className='bg-yellow-600 hover:bg-yellow-700 text-white rounded-full px-4 py-1 transition-colors delay-40 ease-in'>
@@ -119,6 +138,25 @@ function App() {
             <div className="relative bg-gray-700 w-full sm:w-100 h-[200px] sm:h-50 rounded-2xl overflow-hidden shadow-lg
               hover:scale-105 transition-transform duration-300">
               <img 
+                src={watcheditScreenshot} alt="Project screenshot"
+                className="absolute object-cover w-full h-full"
+              />
+              <div className="absolute inset-0 bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] opacity-60"></div>
+              <div className="relative z-10 flex justify-around items-end pb-2 h-full text-white text-[0.8rem] sm:text-[1rem]">
+                <div className='text-left'>
+                  <h3 className="text-[1rem] font-semibold">Watchedit</h3>
+                  <p className="opacity-90 text-[0.9rem]">App to track<br />your favorite movies.
+</p>
+                </div>
+                <a target='blank' href='https://watchedit-movies.vercel.app/' className='underline rounded-2xl hover:text-blue-200 
+                  transition-colors delay-40 ease-in text-[0.9rem]'>Live Demo</a>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div className="relative bg-gray-700 w-full sm:w-100 h-[200px] sm:h-50 rounded-2xl overflow-hidden shadow-lg
+              hover:scale-105 transition-transform duration-300">
+              <img 
                 src={nightrunnerScreenshot} alt="Project screenshot"
                 className="absolute object-cover w-full h-full"
               />
@@ -132,14 +170,17 @@ function App() {
                   transition-colors delay-40 ease-in text-[0.9rem]'>Live Demo</a>
               </div>
             </div>
+
           </div>
         </div>
 
+        
+
         {/* Footer */}
-        <div className='text-gray-400 text-[0.8rem] sm:text-[0.9rem] underline justify-center sm:justify-start pt-5 flex gap-2 flex-wrap w-full sm:w-120 text-center sm:text-left'>
+        <div className='text-gray-400 text-[0.8rem] sm:text-[0.9rem] underline justify-center sm:justify-start pt-5 pb-10 flex gap-2 flex-wrap w-full sm:w-120 text-center sm:text-left'>
           <a href='mailto:mailbox.dixit@gmail.com' className='hover:text-gray-50 transition-colors delay-40 ease-in'>mailbox.dixit@gmail.com</a>
-          <a href='https://dixitportfolio.vercel.app/' target='blank' className='hover:text-gray-50 transition-colors delay-40 ease-in'>portfolio.dixit</a>
-          <a href="https://www.linkedin.com/in/dixitregmi/"  target='blank'  className='hover:text-gray-50 transition-colors delay-40 ease-in'>linkedin.com/in/dixitregmi</a>
+          <a href='https://github.com/dofiki' target='blank' className='hover:text-gray-50 transition-colors delay-40 ease-in'>Github</a>
+          <a href="https://www.linkedin.com/in/dixitregmi"  target='blank'  className='hover:text-gray-50 transition-colors delay-40 ease-in'>linkedin.com/in/dixitregmi</a>
         </div>
       </div>
     </>
