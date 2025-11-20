@@ -73,7 +73,7 @@ bg-[radial-gradient(#292929_2px,transparent_1px)] [background-size:36px_36px] px
 
               {/* Download CV button */}
               <a
-                href="/dixt_regmi_cv.pdf"
+                href="/dixit_regmi_cv.pdf"
                 download
                 className="flex justify-center items-center bg-black text-gray-200 
                 border-gray-400 rounded-md px-2 py-1 border-2 text-[0.9rem] hover:bg-gray-700 
