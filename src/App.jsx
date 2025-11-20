@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 
 import younoScreenshot from './assets/youno_screenshot.JPG';
 import nightrunnerScreenshot from './assets/nightrunner_screenshot.JPG';
-import watcheditScreenshot from './assets/watchedit_Screenshot.JPG'
+import watcheditScreenshot from './assets/watchedit_screenshot.JPG'
 
 import me from './assets/me.png'
 
